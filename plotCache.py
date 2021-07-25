@@ -5,6 +5,7 @@ x = []
 cache = []
 TLB = []
 Page = []
+Free = []
 with open('cacheData.csv') as File:
 	reader = csv.reader(File, delimiter=';', quotechar=';', quoting=csv.QUOTE_MINIMAL)
 	i = 0

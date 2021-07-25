@@ -3,7 +3,7 @@
 #include <errno.h>
 #include <pthread.h>
 
-#define N 1e7
+#define N 1e9
 
 pthread_rwlock_t rwlock; // Read-Write lock
 
