@@ -3,7 +3,7 @@
 #include <errno.h>
 #include <pthread.h>
 
-#define N 1e9
+#define N 1e7
 
 pthread_rwlock_t rwlock; // Read-Write lock
 
@@ -50,6 +50,7 @@ int main() {
 	for (int i = 0; i < 2; ++i) pthread_join(threads[i], NULL);
 	pthread_rwlock_destroy(&rwlock);
 
+	free(a);
 	return 0;
 }
 
